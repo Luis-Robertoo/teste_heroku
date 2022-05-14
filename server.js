@@ -14,7 +14,11 @@ server.get('/', (req, res) => {
     res.send('olá mundo, começo das coisas')
 })
 
-server.get('/tempo', async (req, res) => {
+server.get('/tempo', (req, res) => {
+    res.send(mostraVar())
+})
+
+server.get('/db', async (req, res) => {
     try {
       const client = await pool.connect();
       const result = await client.query('SELECT * FROM teste');
@@ -26,10 +30,6 @@ server.get('/tempo', async (req, res) => {
         res.send("Error " + err);
     }
   })
-
-server.get('/db', (req, res) => {
-
-})
 
 server.listen(PORT, () => {
     console.log('iniciei')
