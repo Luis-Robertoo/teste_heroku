@@ -1,0 +1,23 @@
+{
+  "name": "teste_heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luis-Robertoo/teste_heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luis-Robertoo/teste_heroku/issues"
+  },
+  "homepage": "https://github.com/Luis-Robertoo/teste_heroku#readme",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
